@@ -26,29 +26,7 @@
 	box-shadow: 0.4vw 0.8vw var(--dark-red);
 }
 
-#greetings > h1:hover {
-	transform: translate(-0.5vw, -0.5vw);
-	text-shadow: 1vw 1vw var(--dark-gray);
-}
-
 /* --- styles --- */
-
-body {
-	margin: 0;
-	width: 100vw;
-	height: 100vh;
-	background-color: var(--background);
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: center;
-	color: var(--text-white);
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	animation-name: screen-appear;
-	animation-duration: 2s;
-}
 
 .navbarItem {
 	padding: 0.5%;
@@ -79,25 +57,4 @@ body {
 
 #navbarLinks {
 	width: 60%;
-}
-
-#greetings {
-	font-size: 3vw;
-	width: 40%;
-}
-
-#greetings > h1 {
-	text-shadow: 0.5vw 0.5vw var(--dark-gray);
-	transition: all 0.5s;
-}
-
-#intro {
-	color: var(--darker-white);
-}
-
-#headshot {
-	width: 40%;
-	height: auto;
-	border: solid 5px var(--light-red);
-	border-radius: 10px;
 }
