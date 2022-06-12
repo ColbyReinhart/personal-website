@@ -1,0 +1,103 @@
+/* --- color pallette --- */
+
+:root {
+	--background: #2e2d2d;
+	--dark-gray: #212121;
+	--text-white: #d9d9d9;
+	--darker-white: #929292;
+	--light-red: #9e2a2b;
+	--dark-red: #540b0e;
+	--gold: #e09f3e;
+	--cream: #fff3b0;
+	--cyan: #335c67;
+}
+
+/* --- animation --- */
+
+@keyframes screen-appear {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.navbarItem:hover {
+	background-color: var(--light-red);
+	color: var(--text-white);
+	padding: 1%;
+	box-shadow: 0.4vw 0.8vw var(--dark-red);
+}
+
+#greetings > h1:hover {
+	transform: translate(-0.5vw, -0.5vw);
+	text-shadow: 1vw 1vw var(--dark-gray);
+}
+
+/* --- styles --- */
+
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--background);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	color: var(--text-white);
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	animation-name: screen-appear;
+	animation-duration: 2s;
+}
+
+.navbarItem {
+	padding: 0.5%;
+	color: var(--darker-white);
+	border-radius: 20px;
+	transition: all 0.5s;
+}
+
+.contentBox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+
+#navbar {
+	width: 100%;
+	height: 10%;
+	font-weight: bold;
+	font-size: 2.5vw;
+}
+
+#nametag {
+	width: 30%;
+}
+
+#navbarLinks {
+	width: 60%;
+}
+
+#greetings {
+	font-size: 3vw;
+	width: 40%;
+}
+
+#greetings > h1 {
+	text-shadow: 0.5vw 0.5vw var(--dark-gray);
+	transition: all 0.5s;
+}
+
+#intro {
+	color: var(--darker-white);
+}
+
+#headshot {
+	width: 40%;
+	height: auto;
+	border: solid 5px var(--light-red);
+	border-radius: 10px;
+}
