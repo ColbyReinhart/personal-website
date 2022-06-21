@@ -11,6 +11,21 @@
 	--cream: #fff3b0;
 	--cyan: #335c67;
 }
+.lightRed {
+	background-color: var(--light-red);
+}
+.darkRed {
+	background-color: var(--dark-red);
+}
+.gold {
+	background-color: var(--gold);
+}
+.cream {
+	background-color: var(--cream);
+}
+.cyan {
+	background-color: var(--cyan);
+}
 
 /* --- Scrollbar --- */
 /* width */
