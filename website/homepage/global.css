@@ -8,6 +8,7 @@
 	--light-red: #9e2a2b;
 	--dark-red: #540b0e;
 	--gold: #e09f3e;
+	--dark-gold: #af7319;
 	--cream: #fff3b0;
 	--cyan: #335c67;
 }
@@ -31,20 +32,21 @@
 /* width */
 ::-webkit-scrollbar {
 	height: 1.5vh;
+	overflow: hidden;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-box-shadow: inset 0 0 5px grey; 
-border-radius: 1vh;
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 1vh;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: var(--text-white); 
-border-radius: 1vh;
+	background: var(--text-white); 
+	border-radius: 1vh;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: var(--darker-white); 
+	background: var(--darker-white);
 }
 
 /* --- General styles --- */
@@ -79,6 +81,7 @@ background: var(--darker-white);
 	color: var(--darker-white);
 	border-radius: 2vmin;
 	transition: all 0.5s;
+	cursor: pointer;
 }
 
 .navbarItem:active {
