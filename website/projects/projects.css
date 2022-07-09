@@ -21,6 +21,27 @@
 	}
 }
 
+@keyframes netpong-click {
+	0% {
+		position: relative;
+		top: 0;
+		left: 0;
+		box-shadow: 0.4vw 0.8vw var(--dark-red);	
+	}
+	50% {
+		position: relative;
+		top: 0.3vw;
+		left: 0.6vw;
+		box-shadow: 0.1vw 0.2vw var(--dark-red);
+	}
+	100% {
+		position: relative;
+		top: 0;
+		left: 0;
+		box-shadow: 0.4vw 0.8vw var(--dark-red);
+	}
+}
+
 /* --- General styles --- */
 
 body {
@@ -60,6 +81,11 @@ h2 {
 	gap: 5vmin;
 }
 
+#footer {
+	margin-bottom: 10vh;
+	font-size: 4vmin;
+}
+
 /* --- Project Classes --- */
 
 .project {
@@ -77,9 +103,16 @@ h2 {
 	padding: 12vmin 2vmin 2vmin 2vmin;
 }
 
-.project a {
-	font-size: 5vmin;
+.project p {
+	margin: 0;
+}
+
+a {
 	color: cornflowerblue;
+}
+
+.githubLink {
+	font-size: 5vmin;
 }
 
 .project p {
@@ -97,20 +130,16 @@ h2 {
 
 .projectLabel {
 	position: absolute;
-	top: -5.5vmin;
+	top: -8vmin;
 	background-color: var(--background);
 	padding: 1vmin;
 	border-radius: 5vmin;
 }
 
-/* --- Project IDs --- */
+/* --- Symplyfy --- */
 
-#symplyfy {
+#symplyfy, #symplyfyLabel {
 	border: solid 1vmin var(--gold);
-}
-
-#symplyfyLabel {
-	border: solid 1vmin var(--gold)
 }
 
 #symplyfyGalleryButton {
@@ -125,6 +154,33 @@ h2 {
 
 #symplyfyGalleryButton:active {
 	animation-name: symplyfy-click;
+	animation-duration: 0.5s;
+}
+
+/* --- Webserver From Scratch --- */
+
+#webserver, #webserverLabel {
+	border: solid 1vmin var(--cyan);
+}
+
+/* --- Netpong --- */
+
+#netpong, #netpongLabel {
+	border: solid 1vmin var(--light-red);
+}
+
+#netpongGalleryButton {
+	background-color: var(--light-red);
+	color: var(--text-white);
+	box-shadow: 0.4vw 0.8vw var(--dark-red);
+}
+
+#netpongGalleryButton:hover {
+	box-shadow: 0.4vw 0.8vw var(--dark-red);
+}
+
+#netpongGalleryButton:active {
+	animation-name: netpong-click;
 	animation-duration: 0.5s;
 }
 
@@ -161,7 +217,7 @@ h2 {
 	overflow-y: scroll;
 }
 
-.gallery img {
+.gallery img, .gallery video {
 	max-width: 80%;
 	width: auto;
 	height: auto;
