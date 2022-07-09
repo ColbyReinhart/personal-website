@@ -1,20 +1,11 @@
-// Functions
-
-function displayGallery(gallerySelector)
-{
-	document.querySelector(gallerySelector).style.display = "block";
-}
-
-function closeGallery(gallerySelector)
-{
-	document.querySelector(gallerySelector).style.display = "none";
-}
-
-// Event listeners
 document.querySelector("#symplyfyGalleryButton").addEventListener("click", () => {
-	console.log("Test");
-	displayGallery("#symplyfyGallery");
+	let gallery = document.querySelector("#symplyfyGallery");
+	gallery.style.animationName = "screen-appear";
+	gallery.style.display = "block";
 });
+
 document.querySelector("#symplyfyGalleryClose").addEventListener("click", () => {
-	closeGallery("#symplyfyGallery");
+	let gallery = document.querySelector("#symplyfyGallery");
+	gallery.style.animationName = "screen-hide";
+	setTimeout(() => {gallery.style.display = "none";}, 950);
 });
