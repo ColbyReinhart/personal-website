@@ -95,11 +95,18 @@
 }
 
 #navbar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: var(--background);
+	z-index: 999;
+	border-bottom: 5px solid var(--light-red);
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	width: 94vw;
-	height: 10vh;
+	height: 12vh;
 	font-weight: bold;
 	font-size: 2.5vw;
 	margin-top: 1vmin;

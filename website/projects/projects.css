@@ -168,7 +168,7 @@ a {
 .galleryBox {
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 1000;
 	padding-top: 10vh;
 	top: 0;
 	left: 0;
@@ -177,6 +177,20 @@ a {
 	background-color: rgba(255,255,255,0.5);
 	overflow: hidden;
 	animation-duration: 1s;
+}
+
+.gallery {
+	background-color: var(--background);
+	z-index: 1001;
+	position: relative;
+	margin: auto;
+	border-radius: 1vmin;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: flex-start;
+	justify-content: flex-start;
+	overflow-y: scroll;
 }
 
 .galleryClose {
@@ -204,19 +218,10 @@ a {
 
 	.gallery {
 		background-color: var(--background);
-		position: relative;
-		margin: auto;
 		padding: 4vh 0 4vh 0;
-		border-radius: 1vmin;
 		width: 100vw;
 		height: 80vh;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		align-content: flex-start;
-		justify-content: flex-start;
 		gap: 2vh;
-		overflow-y: scroll;
 	}
 	
 	.gallery img, .gallery video {
@@ -246,19 +251,10 @@ a {
 
 	.gallery {
 		background-color: var(--background);
-		position: relative;
-		margin: auto;
 		padding: 5vmin;
-		border-radius: 1vmin;
 		width: 70vw;
 		height: 70vh;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		align-content: flex-start;
-		justify-content: flex-start;
 		gap: 2vmin;
-		overflow-y: scroll;
 	}
 	
 	.gallery img, .gallery video {
