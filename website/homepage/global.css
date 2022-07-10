@@ -28,6 +28,13 @@
 	background-color: var(--cyan);
 }
 
+.goldText {
+	color: var(--gold);
+}
+.cyanText {
+	color: var(--cyan);
+}
+
 /* --- Scrollbar --- */
 /* width */
 ::-webkit-scrollbar {

@@ -100,6 +100,7 @@ h1 {
 
 .project p {
 	margin: 0;
+	font-size: 4vmin;
 }
 
 a {
@@ -108,10 +109,6 @@ a {
 
 .githubLink {
 	font-size: 5vmin;
-}
-
-.project p {
-	font-size: 4vmin;
 }
 
 .project button {
