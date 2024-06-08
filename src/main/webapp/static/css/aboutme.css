@@ -1,0 +1,29 @@
+main {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+main > * {
+	max-width: 8in;
+}
+
+h2 {
+	font-size: 3em;
+	margin: 0;
+}
+
+p {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+img {
+	max-width: 90vw;
+	max-height: 70vh;
+	width: auto;
+	height: auto;
+}
