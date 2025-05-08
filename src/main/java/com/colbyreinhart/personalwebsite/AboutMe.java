@@ -14,6 +14,6 @@ public class AboutMe extends HttpServlet
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
 	{
-		req.getRequestDispatcher("/static/aboutme.html").forward(req, res);
+		req.getRequestDispatcher("/WEB-INF/aboutme.html").forward(req, res);
 	}
 }

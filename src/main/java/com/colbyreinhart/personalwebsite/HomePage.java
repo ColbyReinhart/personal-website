@@ -14,6 +14,6 @@ public class HomePage extends HttpServlet
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
 	{
-		req.getRequestDispatcher("/static/home.html").forward(req, res);
+		req.getRequestDispatcher("/WEB-INF/home.html").forward(req, res);
 	}
 }
